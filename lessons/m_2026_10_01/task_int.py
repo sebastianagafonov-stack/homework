@@ -39,7 +39,34 @@ seconds = 3725
 
 # ТВОЙ КОД ЗДЕСЬ
 seconds = 3725
-print(seconds // 60)
-print(seconds // 60)
+hours = seconds // (60 * 60)
+print(hours)
+minutes = seconds // 60 % 60
+print(minutes) # 3725 - 3600 = 125 сек, в 125 сек входят 2 мин, по 60 сек
+secs = seconds % 60
 print(seconds % 60)
+print(hours, "ч", minutes, "мин", secs, "сек")
+
+
+seconds = 3783
+hours = seconds // (60 * 60)
+print(hours)
+minutes = seconds // 60 % 60
+print(minutes) # 3725 - 3600 = 125 сек, в 125 сек входят 2 мин, по 60 сек
+secs = seconds % 60
 print(seconds % 60)
+print(hours, "ч", minutes, "мин", secs, "сек")
+
+def time_detector(seconds=None):
+    if not seconds:
+        print("значение НЕ передано")
+        return
+    hours = seconds // (60 * 60)
+    minutes = seconds // 60 % 60
+    secs = seconds % 60
+    print(hours, "ч", minutes, "мин", secs, "сек")
+
+time_detector(3725)
+time_detector(3823)
+time_detector(3921)
+time_detector()

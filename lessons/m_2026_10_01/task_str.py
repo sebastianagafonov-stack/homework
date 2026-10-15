@@ -29,9 +29,9 @@ city = "Москва"
 
 name = "Москва"
 print(len(name))
-print(name.upper())
 print(f"Город: {name}")
 print(name[0])
+print(name.upper())
 
 # ---------- Задача 2 ----------
 # Условие: собери приветствие из двух переменных.
@@ -44,12 +44,9 @@ print(name[0])
 # ПРИВЕТ, Себастьян!
 # Последняя буква имени: н
 print("--- Задача 2 ---")
-greeting = "привет"
+greeting = "привет".upper()
 name = "Себастьян"
 
 # ТВОЙ КОД ЗДЕСЬ
-
-name = "Себастьян"
-print(name + "!")
-print(f"Привет, {name}!")
-print(name[-1])
+print(f"{greeting}, {name}!")
+print("Последняя буква имени:", name[-1])
