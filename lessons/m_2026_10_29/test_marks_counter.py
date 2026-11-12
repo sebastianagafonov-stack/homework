@@ -12,7 +12,11 @@ def marks_counter(marks):
 
     if bad_count == 0:
         bad_count = "Ноль"
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 4a2e93dfb1df32ec6e5430d898d184f3331f94e2
     return good, bad_count
 
 
